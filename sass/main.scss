@@ -1,0 +1,561 @@
+$black: #363636;
+$lightgrey: #EEEEEE;
+$grey: #EDEDED;
+$lightblue: #CCD1D9;
+$blue: #AAB2BD;
+	
+*
+{
+	box-sizing: border-box;
+}
+
+.row
+{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+[class*='col-']
+{
+	float: left;
+	padding-right: 20px;
+}
+
+[class*='col-']:last-of-type
+{
+	padding-right: 0;
+}
+
+.offset-1 {margin-left: 8.33%;}
+.col-1 {width: 8.33;}
+
+.offset-2 {margin-left: 16.66%;}
+.col-2 {width: 16.66%;}
+
+.offset-3 {margin-left: 24.99%;}
+.col-3 {width: 24.99%;}
+
+.offset-4 {margin-left: 33.32%;}
+.col-4 {width: 33.32%;}
+
+.offset-5 {margin-left: 41.65%;}
+col-5 {width: 41.65%;}
+
+.col-6 {width: 49.98%;}
+
+.col-7 {width: 58.31%;}
+
+.col-8 {width: 66.64%;}
+
+.offset- {margin-left: 74.97%}
+.col-9 {width: 74.97%;}
+
+.offset- {margin-left: 83.33%}
+.col-10 {width: 83.33%;}
+
+.offset- {margin-left: 91.63%}
+.col-11 {width: 91.63;}
+
+.col-12 {width: 100%;}
+
+
+/** CSS Styling Sheet **/
+body
+{
+	font-family: "roboto slab";
+	font-weight: 400;
+	margin: 0;
+	text-align: justify;
+	user-select: none;
+}
+
+.wrapper 
+{
+	width: 100%;
+	display: table;
+	margin: 0 auto;
+}
+
+h1
+{
+	font-size: 130px;
+	font-weight: 400;
+	position: absolute;
+	line-height: 1;
+	letter-spacing: 2px;
+	color: $lightgrey;
+	text-align: center;
+	top: 250px;
+}
+
+h2
+{
+	font-size: 30px;
+	font-weight: 300;
+	position: absolute;
+	top: 570px;
+	color: $lightgrey;
+}
+
+h3
+{
+	font-size: 22px;
+	text-align: center;
+}
+
+h4
+{
+	font-size: 17px;
+}
+
+p
+{
+	font-family: "roboto";
+	font-weight: 100;
+}
+
+#hero_imag
+{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.navbar
+{
+	height: 92px;
+	text-align: center;
+	background-color: $grey;
+	
+	ul
+	{
+		font-size: 20px;
+		list-style: none;
+		text-align: center;
+		margin-top: 0.5%;
+	}
+	
+	li
+	{
+		display: inline;
+		padding-left: 1.8%;
+		padding-right: 5.2%;
+	}
+	
+	a
+	{
+		color: $black;
+		text-decoration: none;
+	}
+	
+	.logo
+	{
+		font-size: 50px;
+	}
+}
+
+.navunderline
+{
+	width: 70%;
+}
+
+.mobile
+{
+	display: none;
+}
+
+.last
+{
+	margin-bottom: 4%;
+}
+
+.bottomnav
+{
+	height: 140px;
+	background: $grey;
+	clear: both;
+	
+	ul
+	{
+		list-style: none;
+		text-align: center;
+	}
+	
+	li
+	{
+		display: inline;
+		padding-right: 10%;
+	}
+	
+	a
+	{
+		color: $black;
+		text-decoration: none;
+	}
+	
+	img
+	{
+		margin-top: 1%;
+		padding-left: 1%;
+	}
+	
+}
+
+// Contact Page
+.contact 
+{
+	text-align: center;
+}
+
+form
+{
+	.submit
+	{
+		padding: 0;
+	}
+	
+	input
+	{
+		border: 1px solid $lightblue;
+		box-shadow: inset 1px 1px 3px 0 $blue;
+		height: 40px;
+		padding-left: 2%;
+		margin-top: 2%;
+	}
+	
+	textarea
+	{
+		border: 1px solid $lightblue;
+		box-shadow: inset 1px 1px 3px 0 $blue;
+		resize: none;
+		padding: 2%;
+		margin-top: 2%;
+	}
+	
+	select
+	{
+		height: 40px;
+		border: 1px solid $lightblue;
+		box-shadow: inset 1px 1px 3px 0 $blue;
+		margin-top: 2%;
+	}
+	
+	.deadline
+	{
+		float: left;
+	}
+	
+	::-webkit-input-placeholder
+	{
+		color: black;
+	}
+}
+
+//Resume Styling
+.resumeline
+{
+	width: 45%;
+}
+
+// About Styling
+.about
+{
+	.abouttxt
+	{
+		margin-top: 0;
+	}
+	
+	li
+	{
+		font-family: "roboto";
+		font-weight: 100;
+	}
+}
+
+// Portfolio Styling
+.tile1
+{
+	float: left;
+	margin-bottom: 2%;
+
+}
+
+.tile2
+{
+	float: left;
+	margin-bottom: 2%;
+}
+
+.tile3
+{
+	float: left;
+	margin-top: 4%;
+}
+
+.tile4
+{
+	float: left;
+	margin-top: 4%;
+}
+
+//Photography
+
+.container
+{
+	ul
+	{
+		list-style: none;
+		cursor: pointer;
+		
+		
+		li
+		{
+			text-decoration: underline;
+			display: inline;
+			padding-right: 5%;
+		}
+		
+	}	
+}
+
+.container2
+{
+	display: none;
+}
+
+//Hamburger Menu
+.mobile
+{
+	display: none;
+	position: fixed;
+	width: 100%;
+	top: 0;
+
+	div
+	{
+		display: none;
+	}
+
+	button
+	{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		border: 0;
+		text-indent: 200%;
+		overflow: hidden;
+		background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+		border: 1px solid #ddd;
+		border-radius: 3px;
+		background-size: 80%;
+		width: 30px;
+		height: 30px;
+		outline: none;
+		transition: all 400ms ease;
+
+		&.expanded
+		{
+			transform: rotate(90deg);
+			background-color: transparent;
+			border: 0;
+		}
+	}
+
+	a
+	{
+		display: block;
+	}
+
+	a
+	{
+		background: $lightgrey;
+		text-align: center;
+		padding: 20px 0;
+		border-bottom: 1px solid $grey;
+		text-decoration: none;
+		color: #222;
+		font-weight: bold;
+
+		&:hover, &:active, &:focus
+		{
+			background: darken(#eee, 3%);
+		}
+	}
+}
+
+//ResponsiveStuffs
+
+//Mobile Devices
+	
+@media only screen and (max-width: 500px)
+{
+	.col-1 {width: 8.33%;}
+	
+	.col-2, .col-3, .col-4, .col-5, .col-6, .col-7,.col-8, .col-9, .col-10, .col-11 {width: 83.33%;}
+	
+	.offset-2 {margin-left: 8.33%;}
+	
+	.offset-3 {margin-left: 16.66%;}
+	
+	.offset-4 {width: 24.99%;}
+	
+	.offsest-5 {margin-left: 0;}
+	
+	h1
+	{
+		font-size: 30px;
+		top: 190px;
+		left: 90px;
+		position: absolute;
+	}
+	
+	h2
+	{
+		font-size: 15px;
+		top: 260px;
+		left: 130px;
+		position: absolute;
+	}
+	
+	.heroImage
+	{
+		position: relative;
+	}
+	
+	.navbar
+	{
+		display: none;
+	}
+	
+	.meimg
+	{
+		display: none;
+	}
+	
+	.abouttxt
+	{
+		width: 100%;
+	}	
+	
+	.message
+	{
+		width: 83.33%;
+	}
+	
+	[class*='tile']
+	{
+		margin-bottom: 7%;
+	}
+	
+	.container
+	{
+		display: none;
+	}
+	
+	.container2
+	{
+		display: block;
+		
+		.mainImage2
+		{
+			padding-right: 20px;
+			padding-bottom: 5%;
+		}
+	}
+	
+		.mobile
+	{
+		display: block;
+		position: absolute;
+		z-index: 1;		
+	}
+}
+
+// Tablet Devices 
+
+@media only screen and (max-width: 768px)
+{
+	.col-1 {width: 8.33%;}
+	
+	.col-2, .col-3, .col-4, .col-5, .col-6, .col-7,.col-8, .col-9, .col-10, .col-11 {width: 83.33%;}
+	
+	.offset-2 {margin-left: 8.33%;}
+	
+	.offset-3 {margin-left: 16.66%;}
+	
+	.offset-4 {width: 24.99%;}
+	
+	.offsest-5 {margin-left: 0;}
+	
+	.navbar
+	{
+		display: none;
+	}
+	
+	.heroImage
+	{
+		padding-right: 0;
+	}
+	
+	.meimg
+	{
+		display: none;
+	}
+	
+	.container
+	{
+		display: none;
+	}
+	
+	.container2
+	{
+		display: block;
+		
+		.mainImage2
+		{
+			padding-right: 20px;
+			padding-bottom: 5%;
+		}
+	}
+	
+	.message
+	{
+		width: 83.33%;
+	}
+	
+	.mobile
+	{
+		display: block;
+	}
+}
+
+//Other 
+
+@media only screen and (max-width: 1130px)
+{
+	.navbar
+	{
+		display: none;
+	}
+	
+	.bottomnav li
+	{
+		padding-right: 5%;
+	}
+	.mobile
+	{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 380px)
+{
+	.mobile
+	{
+		display: block;		
+	}
+	
+}
+
+

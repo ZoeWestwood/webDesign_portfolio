@@ -1,0 +1,92 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>photography - Zoe Westwood</title>
+		<link rel="icon" href="images/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="scripts/javascript.js"></script>
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body onLoad="validate(); validateForm();">
+		<div class="wrapper">
+			<div class="row">
+				<header class="navbar">
+					<ul class="col-12">
+						<li><a href="index.html">home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="photography.html">photography</a></li>
+						<li><a class="logo" href="index.html">ZW</a></li>
+						<li><a href="portfolio.html">portfolio</a></li>
+						<li><a href="resume.html">resume</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>
+					<hr class="navunderline">
+				</header><!-- Header -->
+				<div class="row">
+					<header class="hamburgermenu">
+						<nav class="mobile">
+						  <button>Toggle</button>
+							  <div>
+								<a href="index.html">home</a>
+								<a href="about.html">about</a>
+								<a href="photography.html">photography</a>
+								<a href="portfolio.html">portfolio</a>
+								<a href="resume.html">resume</a>
+								<a href="contact.html">contact</a>
+							  </div>
+						</nav>
+					</header>
+				</div>
+			</div> <!-- .row 1 -->
+			<div class="row"> 
+				<h3 class="col-10 offset-1">contact</h3>
+			</div>
+			<div class="row">
+				<p class="col-10 offset-1">Are you looking for someone to start your project? I design professional and affordable websites for individuals and companies. If  you are interested in hiring me - please do I would like to renew my Netflix subscription. Feel free to contact me via:</p>
+			</div>
+			<div class="row">
+				<p class="contact col-10 offset-1">email: zoe-westwood@hotmail.co.uk<br>mobile: 07713460367</p>
+			</div>
+			<div class="row">
+				<p class="col-10 offset-1">Although I rather you didn't phone me as I don't like answering the phone. You know the best way is to probably just fill in the contact form below and I will get back to you as soon as possible!</p>
+			</div>
+			<div class="row">
+				<form class="col-6 offset-3 contactForm">
+					<p><input class="firstName col-6" type="text" name="firstName" placeholder="First Name" onchange="validateForm();"></p>
+					<p><input class="lastName col-6" type="text" name="lastName"  placeholder="Last Name" onchange="validateForm();"></p>
+					<p><input class="email col-6" type="text" name="email" placeholder="Email Address" onchange="validateForm();"></p>
+					<p><input class="col-6" type="text" name="phoneNumber" placeholder="Contact Number"></p>
+					<p><input class="col-6" type="text" name="webAddress" placeholder="Current Web Address"></p>
+					<p><input class="col-3 deadline" type="text" placeholder="Deadline">
+					<select class="col-3" name="timescale">
+						<option value="">Timescale</option>
+						<option value="Weeks">Weeks</option>
+						<option value="Months">Months</option>
+					</select>
+					</p>
+					<p><textarea class="message col-12" name="message" rows="8" cols="69" placeholder="Please enter your message and project details here" onchange="validateForm();"></textarea></p>
+					<p><input class="col-4 offset-4 submit last" type="submit" value="Submit"></p>
+				</form>
+			</div>
+			<footer class="bottomnav">
+				<div class="row">
+					<ul class="col-10 offset-1">
+						<li><a href="index.html">home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="photography.html">photography</a></li>
+						<li><a href="portfolio.html">portfolio</a></li>
+						<li><a href="resume.html">resume</a></li>
+						<li><a href="contact.html">contact</a></li>
+					</ul>
+				</div>
+				<div class="row">
+					<a href="https://en-gb.facebook.com/" target="_blank"><img class="col-1 offset-5" src="images/facebook.jpg" alt="Facebook"></a>
+					<a href="https://twitter.com/ZoeJane97" target="_blank"><img class="col-1" src="images/twitter.png" alt="Twitter"></a>
+					<a href="https://uk.linkedin.com/in/zoe-westwood" target="_blank"><img class="col-1" src="images/linkedin.jpg" alt="Linkedin"></a>
+				</div>
+			</footer>
+		</div> <!-- Wrapper -->
+	</body>
+</html>
